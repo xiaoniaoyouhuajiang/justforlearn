@@ -13,16 +13,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
-    <meta name="author" content="John Doe">
+    <meta name="author" content="bilibili_master">
     <meta name="renderer" content="webkit">
-    <meta name="copyright" content="John Doe">
+    <meta name="copyright" content="bilibili_master">
     
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>fi3ework&#39;s Studio</title>
+    <title>Doge&#39;s lab</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -200,6 +200,9 @@
     
     <!-- 谷歌统计  -->
     
+	
+	<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
 </head>
 
     
@@ -210,7 +213,7 @@
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
     
-    <a class="home-link" href=/>fi3ework's Studio.</a>
+    <a class="home-link" href=/>Doge's lab.</a>
 </header>
     <div class="wrapper">
         <div class="site-intro" style="
@@ -348,13 +351,13 @@
     <article class="index-post">
         <a class="abstract-title" href = "/2018/09/24/时间序列分类及聚类/" >
             
-                <span>[Untitled Post]</span>
+                <span>时间序列算法的研究</span>
         </a>
         <div class="abstract-content">
             时间序列算法的研究
 在典型的分类问题中，您将获得一组输入要素和一组离散输出类，并且您希望对两者之间的关系进行建模。你可以使用无数的分类算法来解决这个问题 - 支持向量机，朴素贝叶斯，k-NN等。但是如果输入特征不是独立的，比如时间序列数据呢？在这种情况下，SVM和朴素贝叶斯不是一个好的选择，因为他们假设输入特征是独立的。 k-NN算法仍然可以工作，但它依赖于输入示例之间的相似性度量的概念。现在问题变成我们如何衡量两个时间序列之间的相似性？
 假如使用欧式距离方法两个时间序列 Q 和长度 n 的 C 之间的欧几里德距离定义为
-$$d(Q,C) = \sqrt{\sum^n_{i=1}[Q(i...
+d(Q,C) = \sqrt{\sum^n_{i=1}[Q(i)-...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -413,7 +416,7 @@ More...
     
         
             
-                <a href="//github.com/xiaoniaoyouhuajiang?tab=repositories" class="iconfont-archer github" target="_blank" title=github></a>
+                <a href="//github.com/xiaoniaoyouhuajiang" class="iconfont-archer github" target="_blank" title=github></a>
             
         
     
@@ -526,7 +529,7 @@ More...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2018/09/24/时间序列分类及聚类/" >[Untitled Post]</a>
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2018/09/24/时间序列分类及聚类/" >时间序列算法的研究</a>
         </li>
     
     
@@ -581,7 +584,7 @@ jsonContent:
     <script>
     var siteMeta = {
         root: "/",
-        author: "John Doe"
+        author: "bilibili_master"
     }
 </script>
     <!-- CDN failover -->
@@ -605,7 +608,22 @@ jsonContent:
     </div>
     <!-- async load share.js -->
      
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
 
 
